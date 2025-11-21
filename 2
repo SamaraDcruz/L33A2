@@ -1,0 +1,25 @@
+# Base class
+class Animal:
+    def move(self)
+        # abstract method (no real code)
+        raise NotImplementedError("Subclasses must override move()")
+
+
+# Subclass 1
+class Human(Animal):
+    def move(self):
+        return "Humans can walk and run."
+
+
+# Subclass 2
+class Dog(Animal):
+    def move(self):
+        return "Dogs can run and jump."
+
+
+# Using the classes
+h = Human()
+d = Dog()
+
+print(h.move())
+print(d.move())
